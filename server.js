@@ -6,7 +6,7 @@ app.get('/home', function (req, res) {
   
   //var params = req.params()
   
-  res.send("hello");
+  res.send("hello Vytas");
 });
 
 app.listen(8080, function () {
