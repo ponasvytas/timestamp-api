@@ -2,7 +2,7 @@ const path = require("path")
 var express = require("express")
 var app = express();
 
-app.get('/', function (req, res) {
+app.get('/home', function (req, res) {
   
   //var params = req.params()
   
