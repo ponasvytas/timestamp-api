@@ -1,5 +1,5 @@
 {
-  "name": "timestamp",
+  "name": "timestamp-ponasvytas2",
   "version": "1.0.0",
   "description": "my first timestamp",
   "main": "server.js",
@@ -13,13 +13,6 @@
     "type": "git",
     "url": "git+https://github.com/ponasvytas/timestamp-api.git"
   },
-  "keywords": [
-    "server.js"
-  ],
-  "bugs": {
-    "url": "https://github.com/ponasvytas/timestamp-api/issues"
-  },
-  "homepage": "https://github.com/ponasvytas/timestamp-api#readme"
-  
+ 
 }
 
