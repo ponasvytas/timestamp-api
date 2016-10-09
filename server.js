@@ -2,6 +2,17 @@ var express = require("express");
 var app = express();
 var moment = require("moment");
 
+
+
+var port = process.env.PORT || 8080
+
+// set the view engine to ejs
+app.set('view engine', 'ejs');
+
+// make express look in the public directory for assets (css/js/img)
+app.use(express.static(__dirname + '/timestamp'));
+
+
 function dateEval (date){
     var re = /\W/g;
     var dateArr = date.split(re);
@@ -43,6 +54,6 @@ app.get('/:query', function (req, res) {
   res.send(JSON.stringify(obj));
 });
 
-app.listen(8080, function () {
+app.listen(port, function () {
   console.log('Example app listening on port 8080!');
 });
