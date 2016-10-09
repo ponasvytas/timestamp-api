@@ -1,3 +1,4 @@
+var path = require("path");
 var express = require("express");
 var app = express();
 var moment = require("moment");
@@ -5,6 +6,22 @@ var moment = require("moment");
 
 
 var port = process.env.PORT || 8080
+
+
+
+app.get('/', function(req, res) {
+  var fileName = path.join(__dirname, 'index.html');
+  res.sendFile(fileName, function (err) {
+    if (err) {
+      console.log(err);
+      res.status(err.status).end();
+    }
+    else {
+      console.log('Sent:', fileName);
+    }
+  });
+});
+
 
 // // set the view engine to ejs
 // app.set('view engine', 'ejs');
