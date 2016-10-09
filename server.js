@@ -10,7 +10,7 @@ var port = process.env.PORT || 8080
 
 
 app.get('/', function(req, res) {
-  var fileName = path.join(__dirname, 'index.html');
+  var fileName = path.join(__dirname, '/index.html');
   res.sendFile(fileName, function (err) {
     if (err) {
       console.log(err);
@@ -72,5 +72,5 @@ app.get('/:query', function (req, res) {
 });
 
 app.listen(port, function () {
-  console.log('Example app listening on port 8080!');
+  console.log('Example app listening on port ' + port);
 });
